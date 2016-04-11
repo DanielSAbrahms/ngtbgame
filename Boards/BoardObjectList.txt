@@ -1,0 +1,4 @@
+#BoardNumber3Digit Format: [(ObjectName;XCoor(4DigitFormat);YCoor(4DigitFormat))/XSize(4DigitFormat)>YSize(4DigitFormat)]
+Board001: []
+Board002: [(Fountain;0296.0096/0051>0063)]
+Board003: []
