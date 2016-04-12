@@ -1,5 +1,7 @@
 The NGTB Game 
 
+The game can be launched from the main.py file or the menu function.
+
 #Development Information
 
 	The game is being written in Python, using the PyGame API.
@@ -7,13 +9,7 @@ http://www.pygame.org/docs/
 
 The project is saved through GitHub. This allows to people to work on the same file simultaneously without worry of losing work. Committing messages is necessary in order to record what’s been done. 
 
-As of right now, the current version of NGTB Game is 1.6.2, which is currently being edited, so no safe execute is guaranteed. The first few versions have been declared unstable due to a directory redesign. Due to this oversight, versions will be released will a directory change that will access files in a version folder from now on. For example, Vx.x will still be located in Python Files directory, but will access folders from a directory that it was designed with, which should remain untouched. 
-
-If changes have been made outside of code, i.e. sprite images and/or text files, the code may fail despite a stable version being used. 
-
-If a change is needed to be checked outside of the code, using a stable version is highly recommended. 
-
-Any code written should be in the main version .py file, unless it is a class definition (such as sprites) or functions that don't require global variables and don't return 2 or more items, in which class created a new .py file would be best.
+As of right now, the current version of NGTB Game is 1.6.2. The menu file can be used to launch the main.py file. 
 
 
 #Goal for the game

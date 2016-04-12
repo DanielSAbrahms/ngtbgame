@@ -77,7 +77,7 @@ while True:
 
     if selected and selection == 0:
         os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/Python Files")
-        execfile("v1.6.2.py", {fullscreen: "global", sound: "global"})
+        execfile("main.py", {fullscreen: "global", sound: "global"})
     elif selected and selection == 1:
         #TODO Options menu should be created
         options_menu()
