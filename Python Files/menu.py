@@ -6,6 +6,14 @@ import pygame
 from pygame import *
 import sys, math, os
 
+global fullscreen
+global sound
+
+def options_menu():
+    global sound
+    global fullscreen
+
+
 pygame.init()
 
 #<editor-fold desc = "Instance Data">
@@ -34,6 +42,7 @@ selectionArrows = pygame.image.load("selectionArrows.png")
 selection = 0
 selected = False
 fullscreen = False
+sound = False
 
 optionsList = [playGame, options, quit]
 
@@ -68,10 +77,10 @@ while True:
 
     if selected and selection == 0:
         os.chdir(os.path.expanduser('~') + "/Google Drive/PyGame Games/NGTB Game/Python Files")
-        execfile("v1.6.2.py", {fullscreen: "global"})
+        execfile("v1.6.2.py", {fullscreen: "global", sound: "global"})
     elif selected and selection == 1:
         #TODO Options menu should be created
-        options()
+        options_menu()
     elif selected and selection == 2:
         pygame.quit()
         sys.exit()

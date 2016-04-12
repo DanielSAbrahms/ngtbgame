@@ -96,8 +96,9 @@ def switchBoard(newboard):
     for obj in objects:
         if newboard == obj.board:
             spriteGroup.add(obj)
-    while pygame.sprite.collide_mask(c, mapMask):
+    while pygame.sprite.collide_mask(c, mapMask) and c.board == newboard:
         c.setCoor()
+    spriteGroup.add(c)
 
 
 # @summary: Changes Player Sprite Image according to Walking Cycle Position
@@ -188,7 +189,6 @@ def direction_calibration(player_direction):  # Changes player Sprite according 
 #</editor-fold>
 
 
-
 pygame.init()
 
 spriteGroup = pygame.sprite.Group()
@@ -276,7 +276,6 @@ c.setCoor()
 
 if currentBoard == c.board:
     spriteGroup.add(c)
-    default_layer.add(c)
 
 # <editor-fold desc="Sets us Board Masks">
 mapMask = terrainSprite(currentBoard)
