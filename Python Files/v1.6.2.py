@@ -188,6 +188,7 @@ def direction_calibration(player_direction):  # Changes player Sprite according 
 #</editor-fold>
 
 
+
 pygame.init()
 
 spriteGroup = pygame.sprite.Group()
