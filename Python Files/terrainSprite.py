@@ -12,10 +12,10 @@ class terrainSprite(pygame.sprite.Sprite):
     # Load the image
     
         if board > 0:
-            os.chdir(os.path.expanduser('~') + "/Google Drive/PyGame Games/NGTB Game/Boards/Board" + str(board))
+            os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/Boards/Board" + str(board))
             self.image = pygame.image.load(str("board" + str(board) + "Mask.png"))
         else:
-            os.chdir(os.path.expanduser('~') + "/Google Drive/PyGame Games/NGTB Game")
+            os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame")
             self.image = pygame.image.load(str("playerBounds.png"))
         self.image = pygame.transform.scale(self.image,(800,600))
         self.mask = pygame.mask.from_surface(self.image)

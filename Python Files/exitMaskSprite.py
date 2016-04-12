@@ -9,7 +9,7 @@ class exitMaskSprite(pygame.sprite.Sprite):
         super(exitMaskSprite, self).__init__()
 
         # Load the images
-        os.chdir(os.path.expanduser('~') + "/Google Drive/PyGame Games/NGTB Game/Boards/Board" + str(board))
+        os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/Boards/Board" + str(board))
         self.image = pygame.image.load((direction.capitalize()) + "Exit" + ".png")
         self.image = pygame.transform.scale(self.image,(800,600))
         self.mask = pygame.mask.from_surface(self.image)

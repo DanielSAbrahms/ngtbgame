@@ -21,13 +21,13 @@ FPS = 60  # The Frames per second
 fpsClock = pygame.time.Clock()
 #</editor-fold>
 
-os.chdir(os.path.expanduser('~') + "/Google Drive/PyGame Games/NGTB Game/MenuSources")
+os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/MenuSources")
 
 DISPLAYSURF = pygame.display.set_mode((800, 600), 0, 32)
 pygame.display.set_caption("NGTB Game")
-os.chdir(os.path.expanduser('~') + "/Google Drive/PyGame Games/NGTB Game")
+os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame")
 pygame.display.set_icon(pygame.image.load("logo.png"))
-os.chdir(os.path.expanduser('~') + "/Google Drive/PyGame Games/NGTB Game/MenuSources")
+os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/MenuSources")
 WHITE = (255, 255, 255)
 
 logo = pygame.image.load("logo.png")
@@ -76,7 +76,7 @@ while True:
             sys.exit()
 
     if selected and selection == 0:
-        os.chdir(os.path.expanduser('~') + "/Google Drive/PyGame Games/NGTB Game/Python Files")
+        os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/Python Files")
         execfile("v1.6.2.py", {fullscreen: "global", sound: "global"})
     elif selected and selection == 1:
         #TODO Options menu should be created

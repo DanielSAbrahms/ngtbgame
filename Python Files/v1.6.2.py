@@ -243,7 +243,7 @@ player_right_standing = pygame.transform.scale(player_right_standing, expandLeft
 # </editor-fold>
 
 os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/Boards/Board1")
-background = pygame.image.load('board1.png')
+background = pygame.image.load('board1.png').convert()
 background = pygame.transform.scale(background, (800, 600))
 
 # Utilizes objectSprite class in order to properly add objects

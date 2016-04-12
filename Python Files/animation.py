@@ -10,7 +10,7 @@ import os
 # @param directory: The path to the folder
 # @return image for the sprite to be set to
 def animation(length,runner,folderName,directory):
-    images_num = GetFolderSize(directory + folderName)  # How many images are in the folder
+    images_num = GetFolderSize(directory + folderName)-1  # How many images are in the folder
     frame_length = int(length/images_num) # How many frames each image is played for
     frameList = [] # The list of images for the animation
     for item in range(images_num):
