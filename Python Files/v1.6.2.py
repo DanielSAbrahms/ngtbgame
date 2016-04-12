@@ -274,6 +274,7 @@ default_layer = pygame.sprite.LayeredUpdates(player)
 # TODO Actually Make the collectible work
 c = collectableSprite()
 c.setCoor()
+
 if currentBoard == c.board:
     spriteGroup.add(c)
     default_layer.add(c)

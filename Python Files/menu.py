@@ -72,6 +72,9 @@ while True:
     elif selected and selection == 1:
         #TODO Options menu should be created
         options()
+    elif selected and selection == 2:
+        pygame.quit()
+        sys.exit()
 
     pygame.display.update()
     fpsClock.tick(FPS)
