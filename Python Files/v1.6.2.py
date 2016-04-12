@@ -315,31 +315,31 @@ while True:
 
     # <editor-fold desc="Checks collision with the exit masks">
     for mask in [rightExitMask, leftExitMask, upExitMask, downExitMask]:
-        if rightExitMask is not None and pygame.sprite.collide_mask(player, rightExitMask):
+        if leftExitMask is not None and pygame.sprite.collide_mask(player, leftExitMask):  # Board 1 -- Left Exit
             spriteGroup = clearGroup(spriteGroup)
             switchBoard(2)
             objects = clearGroup(objects)
             currentBoard = 2
-            leftExitMask.setSpawnPos(0, 228)
-            player.rect.x = leftExitMask.playerSpawnPosition[0]
-            player.rect.y = leftExitMask.playerSpawnPosition[1]
-        elif leftExitMask is not None and pygame.sprite.collide_mask(player, leftExitMask):
+            rightExitMask.setSpawnPos(0, 228)
+            player.rect.x = rightExitMask.playerSpawnPosition[0]
+            player.rect.y = rightExitMask.playerSpawnPosition[1]
+        elif rightExitMask is not None and pygame.sprite.collide_mask(player, rightExitMask):  # Board 2 -- Right Exit
             spriteGroup = clearGroup(spriteGroup)
             switchBoard(1)
             currentBoard = 1
             objects = clearGroup(objects)
-            rightExitMask.setSpawnPos(732, 228)
-            player.rect.x = rightExitMask.playerSpawnPosition[0]
-            player.rect.y = rightExitMask.playerSpawnPosition[1]
+            leftExitMask.setSpawnPos(732, 228)
+            player.rect.x = leftExitMask.playerSpawnPosition[0]
+            player.rect.y = leftExitMask.playerSpawnPosition[1]
 
     # </editor-fold>
 
 
     # <editor-fold desc="Debug Info">
     font = pygame.font.Font(None, 15)
-    text = font.render(str(fpsClock), 1, (10, 10, 10))
+    text = font.render(str(fpsClock)[11:13], 1, (10, 10, 10))
     textpos = text.get_rect()
-    textpos.centerx = DISPLAYSURF.get_rect().centerx
+    textpos.topleft = DISPLAYSURF.get_rect().topleft
     # </editor-fold>
 
     # <editor-fold desc="Checks collision with playerBounds or mapMask">
@@ -395,7 +395,7 @@ while True:
 
 
     # Reset Delay Counter
-    elif is_walking == True:
+    elif is_walking == True or is_running:
         animation_delay = 0
 
     #<editor-fold desc = "Fountain Animation">
@@ -472,7 +472,7 @@ while True:
             elif event.key == K_v:
                 pygame.display.set_mode((800, 600), pygame.RESIZABLE)
                 fullscreen = False
-    # </editor-fold>
+
 
         # Sets booleans according to key status (Releasing)
         if event.type == pygame.KEYUP:
@@ -496,6 +496,7 @@ while True:
             pygame.quit()
             sys.exit()
             objectListFile.close()
+    # </editor-fold>
 
     # Additional Bug Information, Only prints once a second
     if (game_loop_counter % 60 == 0):
