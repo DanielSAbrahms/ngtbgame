@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f5d4104-0e4a-47f3-8d6e-4b6983f97499" name="Default" comment="">
-<<<<<<< HEAD
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python Files/menu.py" afterPath="$PROJECT_DIR$/Python Files/menu.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python Files/v1.6.2.py" afterPath="$PROJECT_DIR$/Python Files/v1.6.2.py" />
-=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/NGTB Game.iml" afterPath="$PROJECT_DIR$/.idea/NGTB Game.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python Files/animation.py" afterPath="$PROJECT_DIR$/Python Files/animation.py" />
->>>>>>> 772c0ad047b478c395e48bc4f92e14deff19a64a
     </list>
     <ignored path="NGTB Game.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,103 +31,39 @@
       <file leaf-file-name="menu.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python Files/menu.py">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="833">
-              <caret line="60" column="107" selection-start-line="60" selection-start-column="107" selection-end-line="60" selection-end-column="107" />
-              <folding />
-=======
-            <state relative-caret-position="170">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
-                <element signature="e#157#170#0" expanded="true" />
-              </folding>
->>>>>>> 772c0ad047b478c395e48bc4f92e14deff19a64a
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="v1.6.2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python Files/v1.6.2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="275" column="11" selection-start-line="275" selection-start-column="11" selection-end-line="275" selection-end-column="11" />
-              <folding>
-                <element signature="e#802#831#0" expanded="true" />
-                <element signature="e#3598#5109#0" expanded="true" />
+                <marker date="1460498024752" expanded="true" signature="0:155" placeholder="..." />
+                <marker date="1460498024752" expanded="true" signature="157:212" placeholder="import ..." />
+                <marker date="1460498024752" expanded="true" signature="2399:2401" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="terrainSprite.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Python Files/terrainSprite.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="collectableSprite.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python Files/collectableSprite.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-=======
-      <file leaf-file-name="animation.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="animation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python Files/animation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+            <state relative-caret-position="204">
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
               <folding>
-                <element signature="e#461#886#0" expanded="true" />
-                <element signature="e#1048#1076#0" expanded="true" />
->>>>>>> 772c0ad047b478c395e48bc4f92e14deff19a64a
+                <element signature="e#1050#1078#0" expanded="true" />
+                <marker date="1460498024740" expanded="false" signature="0:44" placeholder="import ..." />
+                <marker date="1460498024740" expanded="true" signature="47:405" placeholder="..." />
+                <marker date="1460498024740" expanded="true" signature="456:888" placeholder="..." />
+                <marker date="1460498024740" expanded="true" signature="890:1020" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="v1.6.2.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="v1.6.2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Python Files/v1.6.2.py">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="1241">
-              <caret line="78" column="27" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
-              <folding>
-                <element signature="e#157#170#0" expanded="true" />
-                <element signature="e#229#266#0" expanded="true" />
-=======
-            <state relative-caret-position="140">
-              <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
-              <folding>
-                <element signature="e#532#570#0" expanded="true" />
-                <element signature="e#1060#1132#0" expanded="true" />
-                <element signature="e#1683#3270#0" expanded="true" />
-                <element signature="e#3598#5109#0" expanded="true" />
-                <element signature="e#5503#7014#0" expanded="true" />
-                <element signature="e#7379#7709#0" expanded="true" />
-                <element signature="e#9160#9204#0" expanded="true" />
-                <element signature="e#10382#10420#0" expanded="true" />
-                <element signature="e#10635#10672#0" expanded="true" />
-                <element signature="e#11083#11125#0" expanded="true" />
-                <element signature="e#11695#11727#0" expanded="true" />
-                <element signature="e#11806#11882#0" expanded="true" />
-                <element signature="e#11987#12046#0" expanded="true" />
-                <element signature="e#12691#12724#0" expanded="true" />
-                <element signature="e#12927#12995#0" expanded="true" />
-                <element signature="e#13884#13922#0" expanded="true" />
-                <element signature="e#15583#15625#0" expanded="true" />
-                <element signature="e#16100#16132#0" expanded="true" />
-                <element signature="e#16740#16808#0" expanded="true" />
->>>>>>> 772c0ad047b478c395e48bc4f92e14deff19a64a
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="273" column="23" selection-start-line="273" selection-start-column="23" selection-end-line="273" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -155,9 +85,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Python Files/v1.6.2.py" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -171,12 +98,8 @@
         <option value="$PROJECT_DIR$/Python Files/game.py" />
         <option value="$PROJECT_DIR$/Python Files/v1.6.1.py" />
         <option value="$PROJECT_DIR$/Python Files/menu.py" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/Python Files/v1.6.2.py" />
-        <option value="$PROJECT_DIR$/Python Files/collectableSprite.py" />
-=======
         <option value="$PROJECT_DIR$/Python Files/animation.py" />
->>>>>>> 772c0ad047b478c395e48bc4f92e14deff19a64a
+        <option value="$PROJECT_DIR$/Python Files/v1.6.2.py" />
       </list>
     </option>
   </component>
@@ -242,7 +165,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -250,6 +173,136 @@
       <recent name="C:\Users\DanielA\Google Drive\PyGame Games\NGTB Game\Python Files" />
       <recent name="C:\Users\Daniel\Google Drive\PyGame Games\NGTB Game\Python Files" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/NGTB Game.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Boards/Board1/board1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Boards/Board1/board1Mask.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Gimp Files/NGTB.xcf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Python Files/animation.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Python Files/animation.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Python Files/collectableSprite.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Python Files/exitMaskSprite.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Python Files/exitMaskSprite.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Python Files/menu.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Python Files/objectSprite.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Python Files/playerSprite.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Python Files/terrainSprite.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Python Files/terrainSprite.pyc</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Python Files/v1.6.2.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/README.txt</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Boards/Board1/LeftExit.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ObjectImages/desk.png</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Boards/Board1/RightExit.png</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunManager" selected="Python.menu">
     <configuration default="false" name="v1.5[Stable]" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -554,21 +607,12 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.12552084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.49702382" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.501983" order="8" side_tool="true" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251634" sideWeight="0.50670016" order="2" side_tool="true" content_ui="tabs" x="1032" y="359" width="607" height="173" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.49789253" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.49789253" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5021075" order="2" side_tool="true" content_ui="tabs" x="1032" y="359" width="607" height="173" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.49329984" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998326" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-=======
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827735" sideWeight="0.49789253" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827735" sideWeight="0.5021075" order="2" side_tool="true" content_ui="tabs" x="1032" y="359" width="607" height="173" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.4947313" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.4926238" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
->>>>>>> 772c0ad047b478c395e48bc4f92e14deff19a64a
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39852008" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -620,6 +664,13 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Python Files/exitMaskSprite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Python Files/v1.6.py" />
     <entry file="file://$PROJECT_DIR$/Python Files/animation.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -799,6 +850,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Python Files/terrainSprite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Python Files/game.py" />
     <entry file="file://$PROJECT_DIR$/Python Files/v1.6.1_Copy.py" />
     <entry file="file://$PROJECT_DIR$/Python Files/v1.6.1Copy.py" />
@@ -807,102 +865,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="60" column="107" selection-start-line="60" selection-start-column="107" selection-end-line="60" selection-end-column="107" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$USER_HOME$/Downloads/Xbox-360-Controller-for-pygame/test.py" />
-    <entry file="file://$PROJECT_DIR$/Python Files/v1.6.1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="60" column="107" selection-start-line="60" selection-start-column="107" selection-end-line="60" selection-end-column="107" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Python Files/menu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="78" column="27" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
+        <state relative-caret-position="306">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#157#170#0" expanded="true" />
-            <element signature="e#229#266#0" expanded="true" />
-=======
-    <entry file="file://$PROJECT_DIR$/Python Files/v1.6.2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
-          <folding>
-            <element signature="e#532#570#0" expanded="true" />
-            <element signature="e#1060#1132#0" expanded="true" />
-            <element signature="e#1683#3270#0" expanded="true" />
-            <element signature="e#3598#5109#0" expanded="true" />
-            <element signature="e#5503#7014#0" expanded="true" />
-            <element signature="e#7379#7709#0" expanded="true" />
-            <element signature="e#9160#9204#0" expanded="true" />
-            <element signature="e#10382#10420#0" expanded="true" />
-            <element signature="e#10635#10672#0" expanded="true" />
-            <element signature="e#11083#11125#0" expanded="true" />
-            <element signature="e#11695#11727#0" expanded="true" />
-            <element signature="e#11806#11882#0" expanded="true" />
-            <element signature="e#11987#12046#0" expanded="true" />
-            <element signature="e#12691#12724#0" expanded="true" />
-            <element signature="e#12927#12995#0" expanded="true" />
-            <element signature="e#13884#13922#0" expanded="true" />
-            <element signature="e#15583#15625#0" expanded="true" />
-            <element signature="e#16100#16132#0" expanded="true" />
-            <element signature="e#16740#16808#0" expanded="true" />
->>>>>>> 772c0ad047b478c395e48bc4f92e14deff19a64a
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/Python Files/collectableSprite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-=======
-    <entry file="file://$PROJECT_DIR$/Python Files/menu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#157#170#0" expanded="true" />
->>>>>>> 772c0ad047b478c395e48bc4f92e14deff19a64a
+            <marker date="1460498024752" expanded="true" signature="0:155" placeholder="..." />
+            <marker date="1460498024752" expanded="true" signature="157:212" placeholder="import ..." />
+            <marker date="1460498024752" expanded="true" signature="2399:2401" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Python Files/animation.py">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="1275">
-          <caret line="275" column="11" selection-start-line="275" selection-start-column="11" selection-end-line="275" selection-end-column="11" />
+        <state relative-caret-position="204">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding>
-            <element signature="e#802#831#0" expanded="true" />
-            <element signature="e#3598#5109#0" expanded="true" />
+            <element signature="e#1050#1078#0" expanded="true" />
+            <marker date="1460498024740" expanded="false" signature="0:44" placeholder="import ..." />
+            <marker date="1460498024740" expanded="true" signature="47:405" placeholder="..." />
+            <marker date="1460498024740" expanded="true" signature="456:888" placeholder="..." />
+            <marker date="1460498024740" expanded="true" signature="890:1020" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python Files/terrainSprite.py">
+    <entry file="file://$PROJECT_DIR$/Python Files/v1.6.2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-=======
-        <state relative-caret-position="323">
-          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
-          <folding>
-            <element signature="e#461#886#0" expanded="true" />
-            <element signature="e#1048#1076#0" expanded="true" />
->>>>>>> 772c0ad047b478c395e48bc4f92e14deff19a64a
-          </folding>
+        <state relative-caret-position="425">
+          <caret line="273" column="23" selection-start-line="273" selection-start-column="23" selection-end-line="273" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
