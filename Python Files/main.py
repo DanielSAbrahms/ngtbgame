@@ -27,7 +27,6 @@ global upExitMask
 global downExitMask
 global spriteGroup
 global objects
-global c
 global default_layer
 #</editor-fold>
 
@@ -60,15 +59,10 @@ def switchBoard(newboard):
     global spriteGroup
     global downExitMask
     global default_layer
-    global c
     os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/Boards/Board" + str(newboard))
     background = pygame.image.load("board" + str(newboard) + ".png")
     background = pygame.transform.scale(background, (800, 600)).convert()
     mapMask = terrainSprite(newboard)
-    if newboard == c.board:
-        spriteGroup.add(c)
-    else:
-        spriteGroup.remove(c)
     try:
         leftExitMask = exitMaskSprite(newboard, "left")
     except:
@@ -96,9 +90,7 @@ def switchBoard(newboard):
     for obj in objects:
         if newboard == obj.board:
             spriteGroup.add(obj)
-    while pygame.sprite.collide_mask(c, mapMask) and c.board == newboard:
-        c.setCoor()
-    spriteGroup.add(c)
+
 
 
 # @summary: Changes Player Sprite Image according to Walking Cycle Position
@@ -269,13 +261,6 @@ player.mask = pygame.mask.from_surface(pygame.image.load("PlayerImageMask.png"))
 default_layer = pygame.sprite.LayeredUpdates(player)
 # </editor-fold>
 
-# Sets up collectable
-# TODO Actually Make the collectible work
-c = collectableSprite()
-c.setCoor()
-
-if currentBoard == c.board:
-    spriteGroup.add(c)
 
 # <editor-fold desc="Sets us Board Masks">
 mapMask = terrainSprite(currentBoard)
@@ -300,6 +285,8 @@ except:
 # These coordinates are updated to current position after rendering each frame
 old_player_coor = (player.rect.x, player.rect.y)
 while True:
+    print(player.rect.x)
+    print(player.rect.y)
     # <editor-fold desc="Instables">
     game_loop_counter += 1
     animation_delay += 1
@@ -320,15 +307,15 @@ while True:
             switchBoard(2)
             objects = clearGroup(objects)
             currentBoard = 2
-            rightExitMask.setSpawnPos(750, 228)
+            rightExitMask.setSpawnPos(player.rect.x + 700, player.rect.y)
             player.rect.x = rightExitMask.playerSpawnPosition[0]
             player.rect.y = rightExitMask.playerSpawnPosition[1]
         elif rightExitMask is not None and pygame.sprite.collide_mask(player, rightExitMask):  # Board 2 -- Right Exit
-            objects = clearGroup(objects)
             spriteGroup = clearGroup(spriteGroup)
             switchBoard(1)
+            objects = clearGroup(objects)
             currentBoard = 1
-            leftExitMask.setSpawnPos(50, 50)
+            leftExitMask.setSpawnPos(player.rect.x - 700, player.rect.y)
             player.rect.x = leftExitMask.playerSpawnPosition[0]
             player.rect.y = leftExitMask.playerSpawnPosition[1]
 
