@@ -61,7 +61,7 @@ def switchBoard(newboard):
     global downExitMask
     global default_layer
     global c
-    os.chdir(os.path.expanduser('~') + "/Google Drive/PyGame Games/NGTB Game/Boards/Board" + str(newboard))
+    os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/Boards/Board" + str(newboard))
     background = pygame.image.load("board" + str(newboard) + ".png")
     background = pygame.transform.scale(background, (800, 600)).convert()
     mapMask = terrainSprite(newboard)
@@ -85,7 +85,7 @@ def switchBoard(newboard):
         downExitMask = exitMaskSprite(newboard, "down")
     except:
         downExitMask = None
-    os.chdir(os.path.expanduser('~') + "/Google Drive/PyGame Games/NGTB Game/Boards")
+    os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/Boards")
     objects = []
     spriteGroup.empty()
     default_layer = pygame.sprite.LayeredUpdates(player)
@@ -109,7 +109,7 @@ def walking_cycle(player_direction):
     global player
     global walk_cycle_speed
     global walking_counter
-    directory = os.path.expanduser('~') + "/Google Drive/PyGame Games/NGTB Game/Animations/PlayerAnimations/"
+    directory = os.path.expanduser('~') + "/Desktop/ngtbgame/Animations/PlayerAnimations/"
     if player_direction == UP:
         if (walking_counter > walk_cycle_speed - 1) or walking_counter < 0:
             walking_counter = 0
@@ -144,7 +144,7 @@ def running_cycle(player_direction):  # Changes Player Sprite according to Runni
     global player
     global walk_cycle_speed
     global walking_counter
-    directory = os.path.expanduser('~') + "/Google Drive/PyGame Games/NGTB Game/Animations/PlayerAnimations/"
+    directory = os.path.expanduser('~') + "/Desktop/ngtbgame/Animations/PlayerAnimations/"
     if player_direction == UP:
         if (walking_counter > walk_cycle_speed - 1) or walking_counter < 0:
             walking_counter = 0
@@ -228,7 +228,7 @@ DISPLAYSURF = pygame.display.set_mode((800, 600), 0, 32)
 pygame.display.set_caption("NGTB Game")
 
 # <editor-fold desc="Sets Up Player Images">
-os.chdir(os.path.expanduser('~') + "/Google Drive/PyGame Games/NGTB Game/PlayerImages")
+os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/PlayerImages")
 player_front_standing = pygame.image.load('PlayerImageFrontStanding.png')
 player_front_standing = pygame.transform.scale(player_front_standing, expandUpDown)
 
@@ -242,12 +242,12 @@ player_right_standing = pygame.image.load('PlayerImageRightStanding.png')
 player_right_standing = pygame.transform.scale(player_right_standing, expandLeftRight)
 # </editor-fold>
 
-os.chdir(os.path.expanduser('~') + "/Google Drive/PyGame Games/NGTB Game/Boards/Board1")
+os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/Boards/Board1")
 background = pygame.image.load('board1.png')
 background = pygame.transform.scale(background, (800, 600))
 
 # Utilizes objectSprite class in order to properly add objects
-os.chdir(os.path.expanduser('~') + "/Google Drive/PyGame Games/NGTB Game/Boards")
+os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/Boards")
 objects = []
 objectListFile = open("BoardObjectList.txt", 'r')
 
@@ -373,21 +373,21 @@ while True:
             if animation_counter > 59:
                 animation_counter = 0
             image = animation(60, animation_counter, "DownIdleAnimation_CoinFlip", os.path.expanduser(
-                '~') + "/Google Drive/PyGame Games/NGTB Game/Animations/PlayerAnimations/")
+                '~') + "/Desktop/ngtbgame/Animations/PlayerAnimations/")
             image = pygame.transform.scale(image, (90, 100))
             player.image = image
         if direction == LEFT:  # Idle animation for player facing left ------------------------------
             if animation_counter > 29:
                 animation_counter = 0
             image = animation(30, animation_counter, "LeftIdleAnimation_Dance", os.path.expanduser(
-                '~') + "/Google Drive/PyGame Games/NGTB Game/Animations/PlayerAnimations/")
+                '~') + "/Desktop/ngtbgame/Animations/PlayerAnimations/")
             image = pygame.transform.scale(image, (100, 100))
             player.image = image
         if direction == RIGHT:  # Idle animation for player facing right ------------------------------
             if animation_counter > 119:
                 animation_counter = 0
             image = animation(120, animation_counter, "RightIdleAnimation_PhoneLook", os.path.expanduser(
-                '~') + "/Google Drive/PyGame Games/NGTB Game/Animations/PlayerAnimations/"
+                '~') + "/Desktop/ngtbgame/Animations/PlayerAnimations/"
                               )
             image = pygame.transform.scale(image, (100, 100))
             player.image = image
@@ -404,7 +404,7 @@ while True:
             animation_counter = 0
         image = animation(30, animation_counter - 1, "FountainAnimation",
                           os.path.expanduser(
-                              '~') + "/Google Drive/PyGame Games/NGTB Game/Animations/ObjectAnimations/"
+                              '~') + "/Desktop/ngtbgame/Animations/ObjectAnimations/"
                           )
         for obj in objects:
             if obj.name == "Fountain":
