@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f5d4104-0e4a-47f3-8d6e-4b6983f97499" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python Files/menu.py" afterPath="$PROJECT_DIR$/Python Files/menu.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python Files/v1.6.2.py" afterPath="$PROJECT_DIR$/Python Files/v1.6.2.py" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python Files/animation.py" afterPath="$PROJECT_DIR$/Python Files/animation.py" />
+>>>>>>> 772c0ad047b478c395e48bc4f92e14deff19a64a
     </list>
     <ignored path="NGTB Game.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,16 +34,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="v1.6.1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python Files/v1.6.1.py">
+      <file leaf-file-name="menu.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python Files/menu.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="833">
               <caret line="60" column="107" selection-start-line="60" selection-start-column="107" selection-end-line="60" selection-end-column="107" />
               <folding />
+=======
+            <state relative-caret-position="170">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding>
+                <element signature="e#157#170#0" expanded="true" />
+              </folding>
+>>>>>>> 772c0ad047b478c395e48bc4f92e14deff19a64a
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="v1.6.2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python Files/v1.6.2.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -70,19 +85,54 @@
               <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
+=======
+      <file leaf-file-name="animation.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Python Files/animation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+              <folding>
+                <element signature="e#461#886#0" expanded="true" />
+                <element signature="e#1048#1076#0" expanded="true" />
+>>>>>>> 772c0ad047b478c395e48bc4f92e14deff19a64a
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python Files/menu.py">
+      <file leaf-file-name="v1.6.2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python Files/v1.6.2.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="1241">
               <caret line="78" column="27" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
               <folding>
                 <element signature="e#157#170#0" expanded="true" />
                 <element signature="e#229#266#0" expanded="true" />
+=======
+            <state relative-caret-position="140">
+              <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+              <folding>
+                <element signature="e#532#570#0" expanded="true" />
+                <element signature="e#1060#1132#0" expanded="true" />
+                <element signature="e#1683#3270#0" expanded="true" />
+                <element signature="e#3598#5109#0" expanded="true" />
+                <element signature="e#5503#7014#0" expanded="true" />
+                <element signature="e#7379#7709#0" expanded="true" />
+                <element signature="e#9160#9204#0" expanded="true" />
+                <element signature="e#10382#10420#0" expanded="true" />
+                <element signature="e#10635#10672#0" expanded="true" />
+                <element signature="e#11083#11125#0" expanded="true" />
+                <element signature="e#11695#11727#0" expanded="true" />
+                <element signature="e#11806#11882#0" expanded="true" />
+                <element signature="e#11987#12046#0" expanded="true" />
+                <element signature="e#12691#12724#0" expanded="true" />
+                <element signature="e#12927#12995#0" expanded="true" />
+                <element signature="e#13884#13922#0" expanded="true" />
+                <element signature="e#15583#15625#0" expanded="true" />
+                <element signature="e#16100#16132#0" expanded="true" />
+                <element signature="e#16740#16808#0" expanded="true" />
+>>>>>>> 772c0ad047b478c395e48bc4f92e14deff19a64a
               </folding>
             </state>
           </provider>
@@ -119,19 +169,22 @@
         <option value="$PROJECT_DIR$/Python Files/terrainSprite.py" />
         <option value="$PROJECT_DIR$/Python Files/v1.6.1_Copy.py" />
         <option value="$PROJECT_DIR$/Python Files/game.py" />
-        <option value="$PROJECT_DIR$/Python Files/animation.py" />
         <option value="$PROJECT_DIR$/Python Files/v1.6.1.py" />
         <option value="$PROJECT_DIR$/Python Files/menu.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Python Files/v1.6.2.py" />
         <option value="$PROJECT_DIR$/Python Files/collectableSprite.py" />
+=======
+        <option value="$PROJECT_DIR$/Python Files/animation.py" />
+>>>>>>> 772c0ad047b478c395e48bc4f92e14deff19a64a
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -189,7 +242,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -241,9 +294,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Python27\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Files" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="NGTB Game" />
@@ -495,18 +548,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.12552084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.49702382" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.501983" order="8" side_tool="true" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251634" sideWeight="0.50670016" order="2" side_tool="true" content_ui="tabs" x="1032" y="359" width="607" height="173" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.49329984" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998326" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+=======
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827735" sideWeight="0.49789253" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827735" sideWeight="0.5021075" order="2" side_tool="true" content_ui="tabs" x="1032" y="359" width="607" height="173" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.4947313" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+>>>>>>> 772c0ad047b478c395e48bc4f92e14deff19a64a
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39852008" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -740,13 +802,16 @@
     <entry file="file://$PROJECT_DIR$/Python Files/game.py" />
     <entry file="file://$PROJECT_DIR$/Python Files/v1.6.1_Copy.py" />
     <entry file="file://$PROJECT_DIR$/Python Files/v1.6.1Copy.py" />
-    <entry file="file://$PROJECT_DIR$/Python Files/animation.py">
+    <entry file="file://$USER_HOME$/Downloads/Xbox-360-Controller-for-pygame/test.py" />
+    <entry file="file://$PROJECT_DIR$/Python Files/v1.6.1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+        <state relative-caret-position="425">
+          <caret line="60" column="107" selection-start-line="60" selection-start-column="107" selection-end-line="60" selection-end-column="107" />
+          <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$USER_HOME$/Downloads/Xbox-360-Controller-for-pygame/test.py" />
     <entry file="file://$PROJECT_DIR$/Python Files/v1.6.1.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -763,22 +828,58 @@
           <folding>
             <element signature="e#157#170#0" expanded="true" />
             <element signature="e#229#266#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/Python Files/v1.6.2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+          <folding>
+            <element signature="e#532#570#0" expanded="true" />
+            <element signature="e#1060#1132#0" expanded="true" />
+            <element signature="e#1683#3270#0" expanded="true" />
+            <element signature="e#3598#5109#0" expanded="true" />
+            <element signature="e#5503#7014#0" expanded="true" />
+            <element signature="e#7379#7709#0" expanded="true" />
+            <element signature="e#9160#9204#0" expanded="true" />
+            <element signature="e#10382#10420#0" expanded="true" />
+            <element signature="e#10635#10672#0" expanded="true" />
+            <element signature="e#11083#11125#0" expanded="true" />
+            <element signature="e#11695#11727#0" expanded="true" />
+            <element signature="e#11806#11882#0" expanded="true" />
+            <element signature="e#11987#12046#0" expanded="true" />
+            <element signature="e#12691#12724#0" expanded="true" />
+            <element signature="e#12927#12995#0" expanded="true" />
+            <element signature="e#13884#13922#0" expanded="true" />
+            <element signature="e#15583#15625#0" expanded="true" />
+            <element signature="e#16100#16132#0" expanded="true" />
+            <element signature="e#16740#16808#0" expanded="true" />
+>>>>>>> 772c0ad047b478c395e48bc4f92e14deff19a64a
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Python Files/collectableSprite.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/Python Files/menu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#157#170#0" expanded="true" />
+>>>>>>> 772c0ad047b478c395e48bc4f92e14deff19a64a
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python Files/v1.6.2.py">
+    <entry file="file://$PROJECT_DIR$/Python Files/animation.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1275">
           <caret line="275" column="11" selection-start-line="275" selection-start-column="11" selection-end-line="275" selection-end-column="11" />
           <folding>
@@ -794,6 +895,13 @@
           <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
+=======
+        <state relative-caret-position="323">
+          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+          <folding>
+            <element signature="e#461#886#0" expanded="true" />
+            <element signature="e#1048#1076#0" expanded="true" />
+>>>>>>> 772c0ad047b478c395e48bc4f92e14deff19a64a
           </folding>
         </state>
       </provider>
