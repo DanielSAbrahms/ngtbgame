@@ -6,8 +6,8 @@ from pygame.locals import *
 class collectableSprite(pygame.sprite.Sprite):
     def __init__(self):
         super(collectableSprite, self).__init__()
-        os.chdir(os.path.expanduser('~') + "/Google Drive/PyGame Games/NGTB Game/ObjectImages")
-        self.label = ("Collectable")
+        os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/ObjectImages")
+        self.label = "Collectable"
         image = pygame.image.load("Box.png")
         image = pygame.transform.scale(image, (100, 100))
         self.image = image

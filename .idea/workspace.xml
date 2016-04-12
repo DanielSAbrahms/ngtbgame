@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f5d4104-0e4a-47f3-8d6e-4b6983f97499" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/NGTB Game.iml" afterPath="$PROJECT_DIR$/.idea/NGTB Game.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Boards/Board1/desktop.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Boards/Board2/LeftExit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Boards/Board2/desktop.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Boards/desktop.ini" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python Files/collectableSprite.py" afterPath="$PROJECT_DIR$/Python Files/collectableSprite.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python Files/objectSprite.py" afterPath="$PROJECT_DIR$/Python Files/objectSprite.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python Files/playerSprite.py" afterPath="$PROJECT_DIR$/Python Files/playerSprite.py" />
     </list>
     <ignored path="NGTB Game.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,11 +63,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="v1.6.2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="v1.6.2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python Files/v1.6.2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="273" column="23" selection-start-line="273" selection-start-column="23" selection-end-line="273" selection-end-column="23" />
+            <state relative-caret-position="403">
+              <caret line="325" column="118" selection-start-line="325" selection-start-column="118" selection-end-line="325" selection-end-column="118" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="objectSprite.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python Files/objectSprite.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="74" column="1" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="playerSprite.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python Files/playerSprite.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="14" column="76" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collectableSprite.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Python Files/collectableSprite.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -91,8 +126,6 @@
         <option value="$PROJECT_DIR$/Python Files/v1.6.py" />
         <option value="$PROJECT_DIR$/Python Files/v1.4[Stable].py" />
         <option value="$PROJECT_DIR$/Python Files/v1.5[Stable].py" />
-        <option value="$PROJECT_DIR$/Python Files/objectSprite.py" />
-        <option value="$PROJECT_DIR$/Python Files/playerSprite.py" />
         <option value="$PROJECT_DIR$/Python Files/terrainSprite.py" />
         <option value="$PROJECT_DIR$/Python Files/v1.6.1_Copy.py" />
         <option value="$PROJECT_DIR$/Python Files/game.py" />
@@ -100,6 +133,9 @@
         <option value="$PROJECT_DIR$/Python Files/menu.py" />
         <option value="$PROJECT_DIR$/Python Files/animation.py" />
         <option value="$PROJECT_DIR$/Python Files/v1.6.2.py" />
+        <option value="$PROJECT_DIR$/Python Files/objectSprite.py" />
+        <option value="$PROJECT_DIR$/Python Files/playerSprite.py" />
+        <option value="$PROJECT_DIR$/Python Files/collectableSprite.py" />
       </list>
     </option>
   </component>
@@ -165,7 +201,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -589,6 +625,14 @@
       <option name="presentableId" value="Default" />
       <updated>1459636209865</updated>
     </task>
+    <task id="LOCAL-00001" summary="small changes">
+      <created>1460499107639</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1460499107639</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -608,8 +652,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.49702382" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.501983" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.49789253" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.49789253" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5021075" order="2" side_tool="true" content_ui="tabs" x="1032" y="359" width="607" height="173" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.49789253" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5021075" order="2" side_tool="true" content_ui="tabs" x="1032" y="359" width="607" height="173" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.4926238" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -657,6 +701,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="small changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="small changes" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="10" />
@@ -664,13 +712,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Python Files/exitMaskSprite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python Files/v1.6.py" />
     <entry file="file://$PROJECT_DIR$/Python Files/animation.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -836,20 +877,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Python Files/v1.6.py" />
     <entry file="file://$PROJECT_DIR$/Python Files/v1.6.0.py" />
-    <entry file="file://$PROJECT_DIR$/Python Files/playerSprite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Python Files/objectSprite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="75" column="26" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python Files/terrainSprite.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -896,8 +923,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Python Files/v1.6.2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="273" column="23" selection-start-line="273" selection-start-column="23" selection-end-line="273" selection-end-column="23" />
+        <state relative-caret-position="403">
+          <caret line="325" column="118" selection-start-line="325" selection-start-column="118" selection-end-line="325" selection-end-column="118" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Files/objectSprite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="74" column="1" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Files/playerSprite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="76" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python Files/collectableSprite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
           <folding />
         </state>
       </provider>

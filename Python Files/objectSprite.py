@@ -73,7 +73,7 @@ class objectSprite(pygame.sprite.Sprite):
     def __init__(self,line):
         super(objectSprite, self).__init__()
  
-        os.chdir(os.path.expanduser('~') + "/Google Drive/PyGame Games/NGTB Game/ObjectImages")
+        os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/ObjectImages")
         self.name = getObjectName(line)
         self.board = getBoardNum(line)
         self.label = self.name

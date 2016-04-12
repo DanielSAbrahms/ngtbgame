@@ -12,7 +12,7 @@ class playerSprite(pygame.sprite.Sprite):
         super(playerSprite, self).__init__()
  
     # Load the image
-        os.chdir(os.path.expanduser('~') + "/Google Drive/PyGame Games/NGTB Game/PlayerImages")
+        os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/PlayerImages")
         self.image = pygame.image.load("PlayerImageFrontStanding.png")
         self.image = pygame.transform.scale(self.image,(100,100))
         self.label = ("Player")
