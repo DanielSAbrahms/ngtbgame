@@ -66,8 +66,6 @@ def switchBoard(newboard):
     background = pygame.transform.scale(background, (800, 600)).convert()
     mapMask = terrainSprite(newboard)
     if newboard == c.board:
-        print(c.rect.x)
-        print(c.rect.y)
         spriteGroup.add(c)
     else:
         spriteGroup.remove(c)
@@ -322,13 +320,17 @@ while True:
             switchBoard(2)
             objects = clearGroup(objects)
             currentBoard = 2
-            player.rect.x = 50
+            leftExitMask.setSpawnPos(0, 228)
+            player.rect.x = leftExitMask.playerSpawnPosition[0]
+            player.rect.y = leftExitMask.playerSpawnPosition[1]
         elif leftExitMask is not None and pygame.sprite.collide_mask(player, leftExitMask):
             spriteGroup = clearGroup(spriteGroup)
             switchBoard(1)
             currentBoard = 1
             objects = clearGroup(objects)
-            player.rect.x = 700
+            rightExitMask.setSpawnPos(732, 228)
+            player.rect.x = rightExitMask.playerSpawnPosition[0]
+            player.rect.y = rightExitMask.playerSpawnPosition[1]
 
     # </editor-fold>
 

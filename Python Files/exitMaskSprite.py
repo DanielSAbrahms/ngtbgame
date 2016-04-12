@@ -14,7 +14,7 @@ class exitMaskSprite(pygame.sprite.Sprite):
         self.image = pygame.transform.scale(self.image,(800,600))
         self.mask = pygame.mask.from_surface(self.image)
         self.label = "This Mask is " + direction
-        self.playerSpawnPosition = (785, 300)
+        self.playerSpawnPosition = (0, 0)
 
         self.rect = self.image.get_rect()
         self.rect.x = 0
@@ -22,3 +22,6 @@ class exitMaskSprite(pygame.sprite.Sprite):
 
         # Set our transparent color
         self.rect = self.image.get_rect()
+
+    def setSpawnPos(self, set_x, set_y):
+        self.playerSpawnPosition = (set_x, set_y)
