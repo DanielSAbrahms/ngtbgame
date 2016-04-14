@@ -214,8 +214,8 @@ UP = 'up'
 LEFT = 'left'
 RIGHT = 'right'
 # Stretches player image to fit realism
-expandLeftRight = (100, 105)
-expandUpDown = (90, 100)
+expandLeftRight = (96, 150)
+expandUpDown = (96, 150)
 playerBounds = terrainSprite(0)
 # </editor-fold>
 
