@@ -9,7 +9,6 @@ from __future__ import print_function
 from pygame import *
 import os
 os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/Python Files")
-print("EHH")
 from animation import *
 from exitMaskSprite import *
 from objectSprite import *
@@ -289,8 +288,6 @@ except:
 # These coordinates are updated to current position after rendering each frame
 old_player_coor = (player.rect.x, player.rect.y)
 while True:
-    print(player.rect.x)
-    print(player.rect.y)
     # <editor-fold desc="Instables">
     game_loop_counter += 1
     animation_delay += 1
