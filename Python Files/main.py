@@ -6,9 +6,10 @@
 
 
 from __future__ import print_function
-
 from pygame import *
-
+import os
+os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/Python Files")
+print("EHH")
 from animation import *
 from exitMaskSprite import *
 from objectSprite import *
