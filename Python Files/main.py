@@ -20,6 +20,7 @@ from collectableSprite import *
 global mapMask
 global background
 global player
+global currentBoard
 global walk_cycle_speed
 global leftExitMask
 global rightExitMask
@@ -49,9 +50,10 @@ def clearGroup(s_group):
 # @post global variables background and mapMask will be set for newboard board
 # @post clears objects, default layer, and spriteGroup
 # @post runs code that sets up a board
-def switchBoard(newboard):
+def switchBoard(newBoard):
     global background
     global mapMask
+    global currentBoard
     global leftExitMask
     global rightExitMask
     global upExitMask
@@ -59,24 +61,25 @@ def switchBoard(newboard):
     global spriteGroup
     global downExitMask
     global default_layer
-    os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/Boards/Board" + str(newboard))
-    background = pygame.image.load("board" + str(newboard) + ".png")
+    currentBoard = newBoard
+    os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/Boards/Board" + str(newBoard))
+    background = pygame.image.load("board" + str(newBoard) + ".png")
     background = pygame.transform.scale(background, (800, 600)).convert()
-    mapMask = terrainSprite(newboard)
+    mapMask = terrainSprite(newBoard)
     try:
-        leftExitMask = exitMaskSprite(newboard, "left")
+        leftExitMask = exitMaskSprite(newBoard, "left")
     except:
         leftExitMask = None
     try:
-        rightExitMask = exitMaskSprite(newboard, "right")
+        rightExitMask = exitMaskSprite(newBoard, "right")
     except:
         rightExitMask = None
     try:
-        upExitMask = exitMaskSprite(newboard, "up")
+        upExitMask = exitMaskSprite(newBoard, "up")
     except:
         upExitMask = None
     try:
-        downExitMask = exitMaskSprite(newboard, "down")
+        downExitMask = exitMaskSprite(newBoard, "down")
     except:
         downExitMask = None
     os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/Boards")
@@ -88,7 +91,7 @@ def switchBoard(newboard):
         if line[0] != '#' and len(line) > 15:
             objects.append(objectSprite(line))
     for obj in objects:
-        if newboard == obj.board:
+        if newBoard == obj.board:
             spriteGroup.add(obj)
 
 
