@@ -8,6 +8,7 @@
 from __future__ import print_function
 from pygame import *
 import os
+
 os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/Python Files")
 from animation import *
 from exitMaskSprite import *
@@ -16,7 +17,7 @@ from playerSprite import playerSprite
 from terrainSprite import terrainSprite
 from collectableSprite import *
 
-#<editor-fold desc="Global Variables">
+# <editor-fold desc="Global Variables">
 global mapMask
 global background
 global player
@@ -29,9 +30,11 @@ global downExitMask
 global spriteGroup
 global objects
 global default_layer
-#</editor-fold>
 
-#<editor-fold desc="Methods">
+
+# </editor-fold>
+
+# <editor-fold desc="Methods">
 # @summary: clears group or list of all elements
 # @param s_group: group or list name
 # @post: Group or list will be completely empty
@@ -93,7 +96,6 @@ def switchBoard(newBoard):
     for obj in objects:
         if newBoard == obj.board:
             spriteGroup.add(obj)
-
 
 
 # @summary: Changes Player Sprite Image according to Walking Cycle Position
@@ -181,8 +183,8 @@ def direction_calibration(player_direction):  # Changes player Sprite according 
     elif player_direction == LEFT:
         player.image = player_left_standing
 
-#</editor-fold>
 
+# </editor-fold>
 
 pygame.init()
 
@@ -354,7 +356,7 @@ while True:
             walking_cycle(direction)
         walking_counter += 1
 
-    #<editor-fold desc="Animation Player">
+    # <editor-fold desc="Animation Player">
     animation_counter += 1
     if is_walking == False and animation_delay > 60 * player_idle_animation_delay:
         if direction == DOWN:  # Idle animation for player facing down ------------------------------
@@ -379,14 +381,14 @@ while True:
                               )
             image = pygame.transform.scale(image, (100, 100))
             player.image = image
-    #</editor-fold>
+    # </editor-fold>
 
 
     # Reset Delay Counter
     elif is_walking == True or is_running:
         animation_delay = 0
 
-    #<editor-fold desc = "Fountain Animation">
+    # <editor-fold desc = "Fountain Animation">
     if currentBoard == 2:
         if animation_counter > 29:
             animation_counter = 0
@@ -397,7 +399,7 @@ while True:
         for obj in objects:
             if obj.name == "Fountain":
                 obj.image = image
-    #</editor-fold>
+    # </editor-fold>
 
     # <editor-fold desc="Rendering">
     pygame.sprite.Group.update(spriteGroup)
@@ -460,7 +462,6 @@ while True:
             elif event.key == K_v:
                 pygame.display.set_mode((800, 600), pygame.RESIZABLE)
                 fullscreen = False
-
 
         # Sets booleans according to key status (Releasing)
         if event.type == pygame.KEYUP:
