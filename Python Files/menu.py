@@ -118,5 +118,12 @@ while True:
         pygame.quit()
         sys.exit()
 
+    # <editor-fold desc="Debug Info">
+    font = pygame.font.Font(None, 15)
+    text = font.render(str(fpsClock)[11:13], 1, (10, 10, 10))
+    textpos = text.get_rect()
+    textpos.topleft = DISPLAYSURF.get_rect().topleft
+    # </editor-fold>
+
     pygame.display.update()
     fpsClock.tick(FPS)

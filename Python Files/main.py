@@ -364,14 +364,14 @@ while True:
                 animation_counter = 0
             image = animation(60, animation_counter, "DownIdleAnimation_CoinFlip", os.path.expanduser(
                 '~') + "/Desktop/ngtbgame/Animations/PlayerAnimations/")
-            image = pygame.transform.scale(image, (90, 100))
+            image = pygame.transform.scale(image, expandUpDown)
             player.image = image
         if direction == LEFT:  # Idle animation for player facing left ------------------------------
             if animation_counter > 29:
                 animation_counter = 0
             image = animation(30, animation_counter, "LeftIdleAnimation_Dance", os.path.expanduser(
                 '~') + "/Desktop/ngtbgame/Animations/PlayerAnimations/")
-            image = pygame.transform.scale(image, (100, 100))
+            image = pygame.transform.scale(image, expandLeftRight)
             player.image = image
         if direction == RIGHT:  # Idle animation for player facing right ------------------------------
             if animation_counter > 119:
@@ -379,7 +379,7 @@ while True:
             image = animation(120, animation_counter, "RightIdleAnimation_PhoneLook", os.path.expanduser(
                 '~') + "/Desktop/ngtbgame/Animations/PlayerAnimations/"
                               )
-            image = pygame.transform.scale(image, (100, 100))
+            image = pygame.transform.scale(image, expandLeftRight)
             player.image = image
     # </editor-fold>
 
