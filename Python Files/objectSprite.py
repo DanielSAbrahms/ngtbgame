@@ -2,18 +2,23 @@ from __future__ import print_function
 import pygame, sys, math, os
 from pygame.locals import *
 
+global colonCount
+colonCount = 0
 
 def getBoardNum(line):
     return int(line[5:8])
 
 
 def getObjectName(line):
+    global colonCount
     name = ""
     startChecking = False
     for char in line:
+        if char == ":":
+            colonCount+=1
         if char == '(' and startChecking == False:
             startChecking = True
-        elif char == ';':
+        elif char == ':' and colonCount == 1:
             startChecking = False
         if startChecking:
             name += char
@@ -21,12 +26,13 @@ def getObjectName(line):
 
 
 def getXCoor(line):
+    global colonCount
     num = ""
     startChecking = False
     for char in line:
-        if char == ';' and startChecking == False:
+        if char == ':' and startChecking == False:
             startChecking = True
-        elif char == '.':
+        elif char == ':' and colonCount == 2:
             startChecking = False
         if startChecking:
             num += char
@@ -34,12 +40,13 @@ def getXCoor(line):
 
 
 def getYCoor(line):
+    global colonCount
     num = ""
     startChecking = False
     for char in line:
         if char == '.' and startChecking == False:
             startChecking = True
-        elif char == '/':
+        elif char == ':' and colonCount == 3:
             startChecking = False
         if startChecking:
             num += char
@@ -47,12 +54,13 @@ def getYCoor(line):
 
 
 def getXSize(line):
+    global colonCount
     num = ""
     startChecking = False
     for char in line:
         if char == '/' and startChecking == False:
             startChecking = True
-        elif char == '>':
+        elif char == ':' and colonCount == 4:
             startChecking = False
         if startChecking:
             num += char
@@ -60,10 +68,11 @@ def getXSize(line):
 
 
 def getYSize(line):
+    global colonCount
     num = ""
     startChecking = False
     for char in line:
-        if char == ">" and startChecking == False:
+        if char == ":" and startChecking == False:
             startChecking = True
         elif char == ')':
             startChecking = False
