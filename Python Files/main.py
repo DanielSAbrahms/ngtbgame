@@ -260,11 +260,10 @@ for obj in objects:
 # </editor-fold>
 
 # <editor-fold desc="Sets up player">
-player = playerSprite()
+player = playerSprite(expandUpDown)
 direction = DOWN
 player.rect.x = 200
 player.rect.y = 200
-player.mask = pygame.mask.from_surface(pygame.image.load("PlayerImageMask.png"))
 default_layer = pygame.sprite.LayeredUpdates(player)
 # </editor-fold>
 
@@ -308,19 +307,21 @@ while True:
     # <editor-fold desc="Checks collision with the exit masks">
     for mask in [rightExitMask, leftExitMask, upExitMask, downExitMask]:
         if leftExitMask is not None and pygame.sprite.collide_mask(player, leftExitMask):  # Board 1 -- Left Exit
+            print("Leaving NGTB")
             spriteGroup = clearGroup(spriteGroup)
             switchBoard(2)
             objects = clearGroup(objects)
             currentBoard = 2
-            rightExitMask.setSpawnPos(player.rect.x + 700, player.rect.y)
+            rightExitMask.setSpawnPos(player.rect.x + 650, player.rect.y)
             player.rect.x = rightExitMask.playerSpawnPosition[0]
             player.rect.y = rightExitMask.playerSpawnPosition[1]
         elif rightExitMask is not None and pygame.sprite.collide_mask(player, rightExitMask):  # Board 2 -- Right Exit
+            print("Leaving Grass")
             spriteGroup = clearGroup(spriteGroup)
             switchBoard(1)
             objects = clearGroup(objects)
             currentBoard = 1
-            leftExitMask.setSpawnPos(player.rect.x - 700, player.rect.y)
+            leftExitMask.setSpawnPos(player.rect.x - 650, player.rect.y)
             player.rect.x = leftExitMask.playerSpawnPosition[0]
             player.rect.y = leftExitMask.playerSpawnPosition[1]
 
@@ -353,8 +354,10 @@ while True:
     # Changes Player Sprite according to Walking Cycle Position--------------------------------
     if is_walking:
         if (is_running):
+            walk_cycle_speed = 20
             running_cycle(direction)
         else:
+            walk_cycle_speed = 40
             walking_cycle(direction)
         walking_counter += 1
 
@@ -400,6 +403,7 @@ while True:
                           )
         for obj in objects:
             if obj.name == "Fountain":
+                image = pygame.transform.scale(image, (obj.xSize, obj.ySize))
                 obj.image = image
     # </editor-fold>
 
@@ -410,7 +414,7 @@ while True:
     for item in iter(spriteGroup):
         pygame.sprite.LayeredUpdates.add(default_layer, item)
         if item != player:
-            if item.rect.y < player.rect.y - 150:
+            if item.rect.y < player.rect.y - 75:
                 pygame.sprite.LayeredUpdates.move_to_front(default_layer, player)
             else:
                 pygame.sprite.LayeredUpdates.move_to_back(default_layer, player)

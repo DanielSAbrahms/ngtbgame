@@ -1,9 +1,11 @@
 from __future__ import print_function
-import pygame, sys,math,os
+import pygame, sys, math, os
 from pygame.locals import *
+
 
 def getBoardNum(line):
     return int(line[5:8])
+
 
 def getObjectName(line):
     name = ""
@@ -17,6 +19,7 @@ def getObjectName(line):
             name += char
     return str(name[1:])
 
+
 def getXCoor(line):
     num = ""
     startChecking = False
@@ -28,6 +31,7 @@ def getXCoor(line):
         if startChecking:
             num += char
     return int(num[1:])
+
 
 def getYCoor(line):
     num = ""
@@ -41,6 +45,7 @@ def getYCoor(line):
             num += char
     return int(num[1:])
 
+
 def getXSize(line):
     num = ""
     startChecking = False
@@ -52,6 +57,7 @@ def getXSize(line):
         if startChecking:
             num += char
     return int(num[1:])
+
 
 def getYSize(line):
     num = ""
@@ -66,21 +72,20 @@ def getYSize(line):
     return int(num[1:])
 
 
-        
-
 class objectSprite(pygame.sprite.Sprite):
-
-    def __init__(self,line):
+    def __init__(self, line):
         super(objectSprite, self).__init__()
- 
+
         os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/ObjectImages")
         self.name = getObjectName(line)
         self.board = getBoardNum(line)
         self.label = self.name
+        self.xSize = getXSize(line)
+        self.ySize = getYSize(line)
         image = pygame.image.load(self.name + ".png")
-        image = pygame.transform.scale(image,(getXSize(line)*4,getYSize(line)*4))
+        image = pygame.transform.scale(image, (self.xSize, self.ySize))
         self.image = image
-        
+
         self.rect = self.image.get_rect()
         self.rect.x = getXCoor(line)
         self.rect.y = getYCoor(line)
