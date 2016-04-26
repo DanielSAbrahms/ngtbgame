@@ -372,9 +372,9 @@ while True:
             image = pygame.transform.scale(image, expandUpDown)
             player.image = image
         if direction == LEFT:  # Idle animation for player facing left ------------------------------
-            if animation_counter > 29:
+            if animation_counter > 44:
                 animation_counter = 0
-            image = animation(30, animation_counter, "LeftIdleAnimation_Dance", os.path.expanduser(
+            image = animation(45, animation_counter, "LeftIdleAnimation_Dance", os.path.expanduser(
                 '~') + "/Desktop/ngtbgame/Animations/PlayerAnimations/")
             image = pygame.transform.scale(image, expandLeftRight)
             player.image = image
@@ -395,9 +395,9 @@ while True:
 
     # <editor-fold desc = "Fountain Animation">
     if currentBoard == 2:
-        if animation_counter > 29:
+        if animation_counter > 59:
             animation_counter = 0
-        image = animation(30, animation_counter - 1, "FountainAnimation",
+        image = animation(60, animation_counter - 1, "FountainAnimation",
                           os.path.expanduser(
                               '~') + "/Desktop/ngtbgame/Animations/ObjectAnimations/"
                           )

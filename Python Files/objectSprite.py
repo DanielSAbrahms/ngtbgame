@@ -2,15 +2,13 @@ from __future__ import print_function
 import pygame, sys, math, os
 from pygame.locals import *
 
-global colonCount
-colonCount = 0
 
 def getBoardNum(line):
     return int(line[5:8])
 
 
 def getObjectName(line):
-    global colonCount
+    colonCount = 0
     name = ""
     startChecking = False
     for char in line:
@@ -18,7 +16,7 @@ def getObjectName(line):
             colonCount+=1
         if char == '(' and startChecking == False:
             startChecking = True
-        elif char == ':' and colonCount == 1:
+        elif char == ':' and colonCount == 2:
             startChecking = False
         if startChecking:
             name += char
@@ -26,25 +24,13 @@ def getObjectName(line):
 
 
 def getXCoor(line):
-    global colonCount
+    colonCount = 0
     num = ""
     startChecking = False
     for char in line:
-        if char == ':' and startChecking == False:
-            startChecking = True
-        elif char == ':' and colonCount == 2:
-            startChecking = False
-        if startChecking:
-            num += char
-    return int(num[1:])
-
-
-def getYCoor(line):
-    global colonCount
-    num = ""
-    startChecking = False
-    for char in line:
-        if char == '.' and startChecking == False:
+        if char == ":":
+            colonCount+=1
+        if char == ':' and startChecking == False and colonCount == 2:
             startChecking = True
         elif char == ':' and colonCount == 3:
             startChecking = False
@@ -53,12 +39,14 @@ def getYCoor(line):
     return int(num[1:])
 
 
-def getXSize(line):
-    global colonCount
+def getYCoor(line):
+    colonCount = 0
     num = ""
     startChecking = False
     for char in line:
-        if char == '/' and startChecking == False:
+        if char == ":":
+            colonCount += 1
+        if char == ':' and colonCount == 3:
             startChecking = True
         elif char == ':' and colonCount == 4:
             startChecking = False
@@ -67,12 +55,30 @@ def getXSize(line):
     return int(num[1:])
 
 
-def getYSize(line):
-    global colonCount
+def getXSize(line):
+    colonCount = 0
     num = ""
     startChecking = False
     for char in line:
-        if char == ":" and startChecking == False:
+        if char == ":":
+            colonCount += 1
+        if char == ':' and colonCount == 4:
+            startChecking = True
+        elif char == ':' and colonCount == 5:
+            startChecking = False
+        if startChecking:
+            num += char
+    return int(num[1:])
+
+
+def getYSize(line):
+    colonCount = 0
+    num = ""
+    startChecking = False
+    for char in line:
+        if char == ":":
+            colonCount += 1
+        if char == ':' and colonCount == 5:
             startChecking = True
         elif char == ')':
             startChecking = False
