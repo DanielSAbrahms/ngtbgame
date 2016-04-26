@@ -35,6 +35,8 @@ global default_layer
 # </editor-fold>
 
 # <editor-fold desc="Methods">
+
+
 # @summary: clears group or list of all elements
 # @param s_group: group or list name
 # @post: Group or list will be completely empty
@@ -199,7 +201,7 @@ walk_speed = move_speed
 run_speed = int(move_speed * 1.5)
 player_idle_animation_delay = 4  # In seconds: How long it takes for the animation to kick in for player idle
 keys = [False, False, False, False]  # The key statuses for UP DOWN LEFT RIGHT
-walk_cycle_speed = 25  # Lower is Faster: The speed of the walking and running animation
+walk_cycle_speed = 40  # Lower is Faster: The speed of the walking and running animation
 walking_counter = 0  # Where the player is in the walking cycle
 animation_counter = 0  # Where the player is in the animation
 fullscreen = False  # Toggle for full-screen window
@@ -360,9 +362,9 @@ while True:
     animation_counter += 1
     if is_walking == False and animation_delay > 60 * player_idle_animation_delay:
         if direction == DOWN:  # Idle animation for player facing down ------------------------------
-            if animation_counter > 59:
+            if animation_counter > 89:
                 animation_counter = 0
-            image = animation(60, animation_counter, "DownIdleAnimation_CoinFlip", os.path.expanduser(
+            image = animation(90, animation_counter, "DownIdleAnimation_CoinFlip", os.path.expanduser(
                 '~') + "/Desktop/ngtbgame/Animations/PlayerAnimations/")
             image = pygame.transform.scale(image, expandUpDown)
             player.image = image
