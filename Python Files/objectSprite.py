@@ -3,6 +3,8 @@ import pygame, sys, math, os
 from pygame.locals import *
 
 
+
+
 def getBoardNum(line):
     return int(line[5:8])
 
@@ -89,12 +91,17 @@ def getYSize(line):
 
 class objectSprite(pygame.sprite.Sprite):
     def __init__(self, line):
+        for x in range(len(line)):
+            if (line[x] == ","):
+                line = line[:x]
+                break
         super(objectSprite, self).__init__()
 
         os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/ObjectImages")
         self.name = getObjectName(line)
         self.board = getBoardNum(line)
         self.label = self.name
+        print(self.label)
         self.xSize = getXSize(line)
         self.ySize = getYSize(line)
         image = pygame.image.load(self.name + ".png")

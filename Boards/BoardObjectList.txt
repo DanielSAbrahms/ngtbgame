@@ -1,4 +1,4 @@
 #BoardNumber3Digit Format: [(ObjectName:XCoor(4DigitFormat):YCoor(4DigitFormat)):XSize(4DigitFormat):YSize(4DigitFormat)]
-Board001: [(Scott:0600:0155:0125:0150)]
-Board002: [(Fountain:0296:0094:0204:0252)]
-Board003: []
+Board001: (Scott:0600:0155:0125:0150)
+Board001: (TV:0204:0012:0204:0088)
+Board002: (Fountain:0296:0094:0204:0252)
