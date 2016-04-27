@@ -188,9 +188,6 @@ def direction_calibration(player_direction):  # Changes player Sprite according 
 
 # </editor-fold>
 
-
-
-
 pygame.init()
 
 spriteGroup = pygame.sprite.Group()
@@ -311,7 +308,6 @@ while True:
     # <editor-fold desc="Checks collision with the exit masks">
     for mask in [rightExitMask, leftExitMask, upExitMask, downExitMask]:
         if leftExitMask is not None and pygame.sprite.collide_mask(player, leftExitMask):  # Board 1 -- Left Exit
-            print("Leaving NGTB")
             spriteGroup = clearGroup(spriteGroup)
             switchBoard(2)
             objects = clearGroup(objects)
@@ -320,7 +316,6 @@ while True:
             player.rect.x = rightExitMask.playerSpawnPosition[0]
             player.rect.y = rightExitMask.playerSpawnPosition[1]
         elif rightExitMask is not None and pygame.sprite.collide_mask(player, rightExitMask):  # Board 2 -- Right Exit
-            print("Leaving Grass")
             spriteGroup = clearGroup(spriteGroup)
             switchBoard(1)
             objects = clearGroup(objects)
@@ -339,7 +334,12 @@ while True:
     textpos.topleft = DISPLAYSURF.get_rect().topleft
     # </editor-fold>
 
-    # <editor-fold desc="Checks collision with playerBounds or mapMask">
+    # <editor-fold desc="Checks collision with objects or playerBounds or mapMask">
+    for obj in objects:
+        if obj.hasMask and pygame.sprite.collide_mask(player, obj):
+            player.rect.x = old_player_coor[0]
+            player.rect.y = old_player_coor[1]
+            is_walking = False
     if pygame.sprite.collide_mask(player, mapMask) or pygame.sprite.collide_mask(player, playerBounds):
         player.rect.x = old_player_coor[0]
         player.rect.y = old_player_coor[1]
@@ -418,11 +418,9 @@ while True:
             player.image = image
     # </editor-fold>
 
-
     # Reset Delay Counter
     elif is_walking == True or is_running:
         animation_delay = 0
-
 
     # <editor-fold desc="Rendering">
     pygame.sprite.Group.update(spriteGroup)

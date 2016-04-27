@@ -99,14 +99,24 @@ class objectSprite(pygame.sprite.Sprite):
 
         os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/ObjectImages")
         self.name = getObjectName(line)
+        self.hasMask = False
         self.board = getBoardNum(line)
         self.label = self.name
-        print(self.label)
         self.xSize = getXSize(line)
         self.ySize = getYSize(line)
         image = pygame.image.load(self.name + ".png")
+        try: # If image has mask image in ObjectImages
+            mask = pygame.image.load(self.name + "Mask.png")
+            mask = pygame.transform.scale(mask, (self.xSize, self.ySize))
+            self.mask = pygame.mask.from_surface(mask)
+            self.hasMask = True
+        except:
+            print("Warning: No mask found for " + self.name + " object.")
+            self.hasMask = False
         image = pygame.transform.scale(image, (self.xSize, self.ySize))
+
         self.image = image
+
 
         self.rect = self.image.get_rect()
         self.rect.x = getXCoor(line)
