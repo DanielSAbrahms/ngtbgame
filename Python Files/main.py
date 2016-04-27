@@ -188,6 +188,9 @@ def direction_calibration(player_direction):  # Changes player Sprite according 
 
 # </editor-fold>
 
+
+
+
 pygame.init()
 
 spriteGroup = pygame.sprite.Group()
@@ -204,7 +207,7 @@ keys = [False, False, False, False]  # The key statuses for UP DOWN LEFT RIGHT
 walk_cycle_speed = 40  # Lower is Faster: The speed of the walking and running animation
 walking_counter = 0  # Where the player is in the walking cycle
 animation_counter = 0  # Where the player is in the animation
-object_animation_counter = 0 # Where objects are in animations
+object_animation_counter = 0  # Where objects are in animations
 fullscreen = False  # Toggle for full-screen window
 is_walking = False  # The walking status of player
 is_running = False  # The running status of player
@@ -363,32 +366,32 @@ while True:
         walking_counter += 1
 
     # <editor-fold desc="Animation Player">
-        animation_counter += 1
-        object_animation_counter += 1
-        # <editor-fold desc = "Object Animations">
-        if currentBoard == 1:
-            if object_animation_counter < 9:
-                object_animation_counter = 0
-            image = animation(10, object_animation_counter - 1, "TVAnimation",
-                              os.path.expanduser(
-                                  '~') + "/Desktop/ngtbgame/Animations/ObjectAnimations/"
-                              )
-            for obj in objects:
-                if obj.name == "TV":
-                    image = pygame.transform.scale(image, (obj.xSize, obj.ySize))
-                    obj.image = image
-        if currentBoard == 2:
-            if animation_counter > 59:
-                animation_counter = 0
-            image = animation(60, animation_counter - 1, "FountainAnimation",
-                              os.path.expanduser(
-                                  '~') + "/Desktop/ngtbgame/Animations/ObjectAnimations/"
-                              )
-            for obj in objects:
-                if obj.name == "Fountain":
-                    image = pygame.transform.scale(image, (obj.xSize, obj.ySize))
-                    obj.image = image
+    animation_counter += 1
+    # <editor-fold desc = "Object Animations">
+    if currentBoard == 1:
+        if animation_counter > 29:
+            animation_counter = 0
+        image = animation(30, animation_counter - 1, "TVAnimation",
+                          os.path.expanduser(
+                              '~') + "/Desktop/ngtbgame/Animations/ObjectAnimations/"
+                          )
+        for obj in objects:
+            if obj.name == "TV":
+                image = pygame.transform.scale(image, (obj.xSize, obj.ySize))
+                obj.image = image
+    if currentBoard == 2:
+        if animation_counter > 59:
+            animation_counter = 0
+        image = animation(60, animation_counter - 1, "FountainAnimation",
+                          os.path.expanduser(
+                              '~') + "/Desktop/ngtbgame/Animations/ObjectAnimations/"
+                          )
+        for obj in objects:
+            if obj.name == "Fountain":
+                image = pygame.transform.scale(image, (obj.xSize, obj.ySize))
+                obj.image = image
     # </editor-fold>
+
 
     if is_walking == False and animation_delay > 60 * player_idle_animation_delay:
         if direction == DOWN:  # Idle animation for player facing down ------------------------------
@@ -419,7 +422,6 @@ while True:
     # Reset Delay Counter
     elif is_walking == True or is_running:
         animation_delay = 0
-
 
 
     # <editor-fold desc="Rendering">
