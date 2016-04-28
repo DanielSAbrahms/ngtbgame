@@ -379,6 +379,18 @@ while True:
             if obj.name == "TV":
                 image = pygame.transform.scale(image, (obj.xSize, obj.ySize))
                 obj.image = image
+
+    if currentBoard == 1:
+        if animation_counter > 29:
+            animation_counter = 0
+        image = animation(30, animation_counter - 1, "ScottSideAnimation",
+                          os.path.expanduser(
+                              '~') + "/Desktop/ngtbgame/Animations/ObjectAnimations/"
+                          )
+        for obj in objects:
+            if obj.name == "Scott":
+                image = pygame.transform.scale(image, (obj.xSize, obj.ySize))
+                obj.image = image
     if currentBoard == 2:
         if animation_counter > 59:
             animation_counter = 0
@@ -395,9 +407,9 @@ while True:
 
     if is_walking == False and animation_delay > 60 * player_idle_animation_delay:
         if direction == DOWN:  # Idle animation for player facing down ------------------------------
-            if animation_counter > 89:
+            if animation_counter > 119:
                 animation_counter = 0
-            image = animation(90, animation_counter, "DownIdleAnimation_CoinFlip", os.path.expanduser(
+            image = animation(120, animation_counter, "DownIdleAnimation_CoinFlip", os.path.expanduser(
                 '~') + "/Desktop/ngtbgame/Animations/PlayerAnimations/")
             image = pygame.transform.scale(image, expandUpDown)
             player.image = image
