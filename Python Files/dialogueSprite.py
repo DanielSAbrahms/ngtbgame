@@ -11,5 +11,5 @@ class dialogueSprite(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.x = 100
         self.rect.y = 225
-        self.font = pygame.font.Font(None, 36)
+        self.font = pygame.font.Font(None, 32)
         self.dialogue = self.font.render(text, 1, (10, 10, 10))
