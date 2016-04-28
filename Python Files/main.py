@@ -357,7 +357,7 @@ while True:
 
     # Changes Player Sprite according to Walking Cycle Position--------------------------------
     if is_walking:
-        if (is_running):
+        if is_running:
             walk_cycle_speed = 20
             running_cycle(direction)
         else:
