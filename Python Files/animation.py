@@ -14,7 +14,11 @@ def animation(length, runner, folderName, directory):
     frame_length = round(length / images_num)  # How many frames each image is played for
     frameList = []  # The list of images for the animation
     for item in range(0, images_num):
-        frameList.append(pygame.image.load(directory + folderName + "/" + str(item) + ".png"))
+        try:
+            frameList.append(pygame.image.load(directory + folderName + "/" + str(item) + ".png"))
+        except:
+            images_num -= 1
+            frame_length = round(length / images_num)
     image = frameList[int(runner / frame_length)]
     return image
 
@@ -22,4 +26,4 @@ def animation(length, runner, folderName, directory):
 # @param path: The path for the directory this animation is accessing photos from
 # @return int: number of photos in the directory
 def GetFolderSize(path):
-    return len(os.listdir(path)) - 1  # TODO Fix this function so that repeat images arent needed
+    return len(os.listdir(path))

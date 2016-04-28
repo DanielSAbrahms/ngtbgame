@@ -335,7 +335,8 @@ while True:
     # </editor-fold>
 
     # <editor-fold desc="Checks collision with objects or playerBounds or mapMask">
-    for obj in objects:
+    for obj in spriteGroup:
+        print(obj.label)
         if obj.hasMask and pygame.sprite.collide_mask(player, obj):
             player.rect.x = old_player_coor[0]
             player.rect.y = old_player_coor[1]
