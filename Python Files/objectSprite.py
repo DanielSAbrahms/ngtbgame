@@ -3,8 +3,6 @@ import pygame, sys, math, os
 from pygame.locals import *
 
 
-
-
 def getBoardNum(line):
     return int(line[5:8])
 
@@ -15,7 +13,7 @@ def getObjectName(line):
     startChecking = False
     for char in line:
         if char == ":":
-            colonCount+=1
+            colonCount += 1
         if char == '(' and startChecking == False:
             startChecking = True
         elif char == ':' and colonCount == 2:
@@ -31,7 +29,7 @@ def getXCoor(line):
     startChecking = False
     for char in line:
         if char == ":":
-            colonCount+=1
+            colonCount += 1
         if char == ':' and startChecking == False and colonCount == 2:
             startChecking = True
         elif char == ':' and colonCount == 3:
@@ -105,7 +103,7 @@ class objectSprite(pygame.sprite.Sprite):
         self.xSize = getXSize(line)
         self.ySize = getYSize(line)
         image = pygame.image.load(self.name + ".png")
-        try: # If image has mask image in ObjectImages
+        try:  # If image has mask image in ObjectImages
             mask = pygame.image.load(self.name + "Mask.png")
             mask = pygame.transform.scale(mask, (self.xSize, self.ySize))
             self.mask = pygame.mask.from_surface(mask)
@@ -116,7 +114,6 @@ class objectSprite(pygame.sprite.Sprite):
         image = pygame.transform.scale(image, (self.xSize, self.ySize))
 
         self.image = image
-
 
         self.rect = self.image.get_rect()
         self.rect.x = getXCoor(line)
