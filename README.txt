@@ -22,7 +22,7 @@ As of right now, the current version of NGTB Game is 1.6.2. The menu file can be
 
 	Eventually the Map needs to start being designed according to a design of Pixel-Art. The style and resolution of Pixel-Art needs to be chosen. As of right now, something like StarDew Valley should suffice.
 
-	The resolution of the game window is 800x600. The base resolution of images is 200x150, and scaled using pygame. This probably isn't the most efficient way to do this and will need to be re-thought.
+	The resolution of the game window is 800x600. The base resolution of images is 400x300, and scaled using pygame. This probably isn't the most efficient way to do this and will need to be re-thought.
 
  
 

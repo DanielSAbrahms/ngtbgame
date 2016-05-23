@@ -17,10 +17,10 @@ def options_menu():
 
 pygame.init()
 
-#<editor-fold desc = "Instance Data">
+# <editor-fold desc = "Instance Data">
 FPS = 60  # The Frames per second
 fpsClock = pygame.time.Clock()
-#</editor-fold>
+# </editor-fold>
 
 os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/MenuSources")
 
@@ -32,10 +32,10 @@ os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/MenuSources")
 WHITE = (255, 255, 255)
 
 logo = pygame.image.load("logo.png")
-logo = pygame.transform.scale(logo, (800,600))
+logo = pygame.transform.scale(logo, (800, 600))
 
 background = pygame.image.load("background.png").convert()
-background = pygame.transform.scale(background, (1200,900))
+background = pygame.transform.scale(background, (1200, 900))
 
 playGame = pygame.image.load("playGame.png")
 
@@ -53,42 +53,38 @@ background_y = 0
 moving_left_x = True
 moving_left_y = True
 
-
 optionsList = [playGame, options, quit]
 
 while True:
-    if (moving_left_x):
+    if moving_left_x:
         background_x -= 0.5
     else:
         background_x += 0.5
-    if (moving_left_y):
+    if moving_left_y:
         background_y -= 0.5
     else:
         background_y += 0.5
 
-    if (background_x <= -200):
+    if background_x <= -200:
         moving_left_x = False
-    elif (background_x >= 0):
+    elif background_x >= 0:
         moving_left_x = True
 
-    if (background_y <= -150):
+    if background_y <= -150:
         moving_left_y = False
-    elif (background_y >= 0):
+    elif background_y >= 0:
         moving_left_y = True
-
 
     DISPLAYSURF.fill(WHITE)
 
     DISPLAYSURF.blit(background, (background_x, background_y))
 
-    DISPLAYSURF.blit(logo,(0,0))
+    DISPLAYSURF.blit(logo, (0, 0))
 
     for x in range(len(optionsList)):
         DISPLAYSURF.blit(optionsList[x], (300, 300 + (x * 75)))
         if x == selection:
-            DISPLAYSURF.blit(selectionArrows, (190, 278 + (x * 75)))
-
-
+            DISPLAYSURF.blit(selectionArrows, (190, 280 + (x * 76)))
 
     for event in pygame.event.get():
         if event.type == pygame.KEYDOWN:
@@ -113,7 +109,7 @@ while True:
         os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/Python Files")
         execfile("main.py", {fullscreen: "global", sound: "global"})
     elif selected and selection == 1:
-        #TODO Options menu should be created
+        # TODO Options menu should be created
         options_menu()
     elif selected and selection == 2:
         pygame.quit()

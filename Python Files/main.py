@@ -88,17 +88,13 @@ def switchBoard(newBoard):
     except:
         downExitMask = None
     os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/Boards")
-    objects = []
     spriteGroup.empty()
     default_layer = pygame.sprite.LayeredUpdates(player)
-    objectListFile = open("BoardObjectList.txt", 'r')
-    for line in objectListFile:
-        if line[0] != '#' and len(line) > 15:
-            objects.append(objectSprite(line))
     for obj in objects:
         if newBoard == obj.board:
             spriteGroup.add(obj)
-
+        else:
+            spriteGroup.remove(obj)
 
 # @summary: Changes Player Sprite Image according to Walking Cycle Position
 # @param player_direction : the direction of the player either UP DOWN LEFT RIGHT
@@ -188,9 +184,6 @@ def direction_calibration(player_direction):  # Changes player Sprite according 
 
 # </editor-fold>
 
-
-
-
 pygame.init()
 
 spriteGroup = pygame.sprite.Group()
@@ -253,15 +246,10 @@ background = pygame.transform.scale(background, (800, 600))
 os.chdir(os.path.expanduser('~') + "/Desktop/ngtbgame/Boards")
 objects = []
 objectListFile = open("BoardObjectList.txt", 'r')
-
-# <editor-fold desc="Sets up objects">
 for line in objectListFile:
-    if line[0] != '#' and len(line) > 15:
+    if line[0] != '#':
         objects.append(objectSprite(line))
-for obj in objects:
-    if currentBoard == obj.board:
-        spriteGroup.add(obj)
-# </editor-fold>
+objectListFile.close()
 
 # <editor-fold desc="Sets up player">
 player = playerSprite(expandUpDown)
@@ -294,7 +282,9 @@ except:
 
 # These coordinates are updated to current position after rendering each frame
 old_player_coor = (player.rect.x, player.rect.y)
+switchBoard(1)
 while True:
+
     # <editor-fold desc="Instables">
     game_loop_counter += 1
     animation_delay += 1
@@ -311,19 +301,15 @@ while True:
     # <editor-fold desc="Checks collision with the exit masks">
     for mask in [rightExitMask, leftExitMask, upExitMask, downExitMask]:
         if leftExitMask is not None and pygame.sprite.collide_mask(player, leftExitMask):  # Board 1 -- Left Exit
-            print("Leaving NGTB")
             spriteGroup = clearGroup(spriteGroup)
             switchBoard(2)
-            objects = clearGroup(objects)
             currentBoard = 2
             rightExitMask.setSpawnPos(player.rect.x + 650, player.rect.y)
             player.rect.x = rightExitMask.playerSpawnPosition[0]
             player.rect.y = rightExitMask.playerSpawnPosition[1]
         elif rightExitMask is not None and pygame.sprite.collide_mask(player, rightExitMask):  # Board 2 -- Right Exit
-            print("Leaving Grass")
             spriteGroup = clearGroup(spriteGroup)
             switchBoard(1)
-            objects = clearGroup(objects)
             currentBoard = 1
             leftExitMask.setSpawnPos(player.rect.x - 650, player.rect.y)
             player.rect.x = leftExitMask.playerSpawnPosition[0]
@@ -339,7 +325,12 @@ while True:
     textpos.topleft = DISPLAYSURF.get_rect().topleft
     # </editor-fold>
 
-    # <editor-fold desc="Checks collision with playerBounds or mapMask">
+    # <editor-fold desc="Checks collision with objects or playerBounds or mapMask">
+    for obj in spriteGroup:
+        if obj.hasMask and pygame.sprite.collide_mask(player, obj):
+            player.rect.x = old_player_coor[0]
+            player.rect.y = old_player_coor[1]
+            is_walking = False
     if pygame.sprite.collide_mask(player, mapMask) or pygame.sprite.collide_mask(player, playerBounds):
         player.rect.x = old_player_coor[0]
         player.rect.y = old_player_coor[1]
@@ -357,7 +348,7 @@ while True:
 
     # Changes Player Sprite according to Walking Cycle Position--------------------------------
     if is_walking:
-        if (is_running):
+        if is_running:
             walk_cycle_speed = 20
             running_cycle(direction)
         else:
@@ -379,6 +370,18 @@ while True:
             if obj.name == "TV":
                 image = pygame.transform.scale(image, (obj.xSize, obj.ySize))
                 obj.image = image
+
+    if currentBoard == 1:
+        if animation_counter > 29:
+            animation_counter = 0
+        image = animation(30, animation_counter - 1, "ScottSideAnimation",
+                          os.path.expanduser(
+                              '~') + "/Desktop/ngtbgame/Animations/ObjectAnimations/"
+                          )
+        for obj in objects:
+            if obj.name == "Scott":
+                image = pygame.transform.scale(image, (obj.xSize, obj.ySize))
+                obj.image = image
     if currentBoard == 2:
         if animation_counter > 59:
             animation_counter = 0
@@ -395,9 +398,9 @@ while True:
 
     if is_walking == False and animation_delay > 60 * player_idle_animation_delay:
         if direction == DOWN:  # Idle animation for player facing down ------------------------------
-            if animation_counter > 89:
+            if animation_counter > 119:
                 animation_counter = 0
-            image = animation(90, animation_counter, "DownIdleAnimation_CoinFlip", os.path.expanduser(
+            image = animation(120, animation_counter, "DownIdleAnimation_CoinFlip", os.path.expanduser(
                 '~') + "/Desktop/ngtbgame/Animations/PlayerAnimations/")
             image = pygame.transform.scale(image, expandUpDown)
             player.image = image
@@ -418,11 +421,9 @@ while True:
             player.image = image
     # </editor-fold>
 
-
     # Reset Delay Counter
     elif is_walking == True or is_running:
         animation_delay = 0
-
 
     # <editor-fold desc="Rendering">
     pygame.sprite.Group.update(spriteGroup)
@@ -511,7 +512,8 @@ while True:
     # </editor-fold>
 
     # Additional Bug Information, Only prints once a second
-    if (game_loop_counter % 60 == 0):
-        doNothing = True
+    if game_loop_counter % 60 == 0:
+        for obj in objects:
+            print(obj.label)
     pygame.display.update()
     fpsClock.tick(FPS)
