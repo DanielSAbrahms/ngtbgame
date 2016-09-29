@@ -96,6 +96,7 @@ def switchBoard(newBoard):
         else:
             spriteGroup.remove(obj)
 
+
 # @summary: Changes Player Sprite Image according to Walking Cycle Position
 # @param player_direction : the direction of the player either UP DOWN LEFT RIGHT
 # @pre player sprite image will be what is was before the function was called
@@ -514,6 +515,6 @@ while True:
     # Additional Bug Information, Only prints once a second
     if game_loop_counter % 60 == 0:
         for obj in objects:
-            print(obj.label)
+            doNothing = True;
     pygame.display.update()
     fpsClock.tick(FPS)

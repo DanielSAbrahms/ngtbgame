@@ -7,13 +7,14 @@ import pygame
 from pygame import *
 import sys, math, os
 
-global fullscreen
-global sound
+global fullscreen # The Variable toggles the fullscreen window
+global sound # The Variable toggles the sound ( Music and Effects)
 
+# @pre The existing state of the fullscreen and sound variables
+# @post The new state of the fullscreen and sound variables
 def options_menu():
     global sound
     global fullscreen
-
 
 pygame.init()
 
