@@ -426,6 +426,7 @@ while True:
     elif is_walking == True or is_running:
         animation_delay = 0
 
+
     # <editor-fold desc="Rendering">
     pygame.sprite.Group.update(spriteGroup)
     DISPLAYSURF.fill((255, 255, 255))
